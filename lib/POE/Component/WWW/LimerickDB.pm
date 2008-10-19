@@ -3,7 +3,7 @@ package POE::Component::WWW::LimerickDB;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 
 use POE;
 use base 'POE::Component::NonBlockingWrapper::Base';
@@ -251,11 +251,13 @@ Takes no arguments. Tells the component to shut itself down.
 =head1 OUTPUT
 
     $VAR1 = {
-        'out' => 'A man of the youth demographic
-            Would frequently stop passing traffic 
-            When he sat with his sweet 
-            In full view of the street 
-            And their actions were most pornographic',
+        "out" => {
+            "number" => 442,
+            "text" => "There once was a lady from Wheeling \nwho professed to lack sexual
+                feeling, \ntill a cynic named Boris \nbarely brushed her clitoris,
+                \nand she had to be scraped from the ceiling.",
+            "rating" => 54
+        },
         'args' => [ 'random' ],
         'method' => 'get_cached'
     };
@@ -267,15 +269,15 @@ that hashref are as follows:
 
 =head2 C<out>
 
-    {
-        'out' => 'A man of the youth demographic
-                    Would frequently stop passing traffic 
-                    When he sat with his sweet 
-                    In full view of the street 
-                    And their actions were most pornographic',
-    }
+    "out" => {
+        "number" => 442,
+        "text" => "There once was a lady from Wheeling \nwho professed to lack sexual
+            feeling, \ntill a cynic named Boris \nbarely brushed her clitoris,
+            \nand she had to be scraped from the ceiling.",
+        "rating" => 54
+    },
 
-If no errors occured the C<out> key will be present. Its value will be the output
+If no errors occured the C<out> key will be present. Its value will be the return value
 of the method that you called (specified in C<method> argument to C<get()> event/method)
 
 =head2 C<error>

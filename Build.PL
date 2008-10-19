@@ -13,7 +13,7 @@ my $builder = Module::Build->new(
     requires => {
         'POE'                                      => 0.9999,
         'POE::Component::NonBlockingWrapper::Base' => 0.002,
-        'WWW::LimerickDB'                          => 0.0203,
+        'WWW::LimerickDB'                          => 0.0303,
     },
     add_to_cleanup      => [ 'POE-Component-WWW-LimerickDB-*' ],
     create_makefile_pl => 'traditional',

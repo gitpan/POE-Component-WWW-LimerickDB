@@ -10,7 +10,7 @@ WriteMakefile
           'PREREQ_PM' => {
                            'Test::More' => 0,
                            'POE::Component::NonBlockingWrapper::Base' => '0.002',
-                           'WWW::LimerickDB' => '0.0203',
+                           'WWW::LimerickDB' => '0.0303',
                            'POE' => '0.9999'
                          }
         )

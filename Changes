@@ -1,5 +1,8 @@
 Revision history for POE-Component-WWW-LimerickDB
 
+0.0102  October 19, 2008
+        Changed documentation to reflect the update in WWW::LimerickDB
+
 0.0101  October 18, 2008
         First version, released on an unsuspecting world.
 

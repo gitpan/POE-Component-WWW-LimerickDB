@@ -28,7 +28,7 @@ sub results {
         print "Error: $in_ref->{error}\n";
     }
     else {
-        print "$in_ref->{out}\n";
+        print "$in_ref->{out}{text}\n";
     }
     $poco->shutdown;
 }

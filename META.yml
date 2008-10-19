@@ -1,6 +1,6 @@
 ---
 name: POE-Component-WWW-LimerickDB
-version: 0.0101
+version: 0.0102
 author:
   - "Zoffix <'zoffix@cpan.org'>"
 abstract: non-blocking wrapper around WWW::LimerickDB
@@ -10,13 +10,13 @@ resources:
 requires:
   POE: 0.9999
   POE::Component::NonBlockingWrapper::Base: 0.002
-  WWW::LimerickDB: 0.0203
+  WWW::LimerickDB: 0.0303
 build_requires:
   Test::More: 0
 provides:
   POE::Component::WWW::LimerickDB:
     file: lib/POE/Component/WWW/LimerickDB.pm
-    version: 0.0101
+    version: 0.0102
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
