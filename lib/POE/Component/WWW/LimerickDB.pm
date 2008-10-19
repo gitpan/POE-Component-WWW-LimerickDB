@@ -3,7 +3,7 @@ package POE::Component::WWW::LimerickDB;
 use warnings;
 use strict;
 
-our $VERSION = '0.0102';
+our $VERSION = '0.0103';
 
 use POE;
 use base 'POE::Component::NonBlockingWrapper::Base';
